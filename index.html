@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Room Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        
+             <!-- DATE SELECTION -->
+      
+
+        <section class="date-panel">
+
+            <div class="date-selection">
+
+                <!-- Check-in -->
+                <div class="date-box">
+
+                    <div class="calendar-icon">
+                        📅
+                    </div>
+
+                    <div class="date-content">
+
+                        <span>
+                            Check-in Date
+                        </span>
+
+                        <input
+                            type="date"
+                            id="checkIn"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="date-arrow">
+                    →
+                </div>
+
+
+
+<!-- Check-out -->
+
+
+                <div class="date-box">
+
+                    <div class="calendar-icon">
+                        📅
+                    </div>
+
+                    <div class="date-content">
+
+                        <span>
+                            Check-out Date
+                        </span>
+
+                        <input
+                            type="date"
+                            id="checkOut"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+
+
+<!-- Update button -->
+
+
+                <button
+                    class="update-btn"
+                    id="updateDates"
+                    type="button">
+                    Update Dates
+                </button>
+
+
+
+                
+<!-- Date status -->
+
+
+                <div
+                    class="date-status"
+                    id="dateStatus">
+
+                    <span class="status-icon">
+                        ✓
+                    </span>
+
+                    <span id="statusText">
+                        Select your dates
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+
+<!-- Nights -->
+
+            <div class="nights-info">
+
+                <span class="calendar-small">
+                    ▣
+                </span>
+
+                <span id="nightsText">
+                    Select valid dates to see number of nights
+                </span>
+
+            </div>
+
+
+
+ <!-- Error -->
+
+
+            <div
+                class="error-message"
+                id="errorMessage">
+            </div>
+
+        </section>
+
+
+
+
+<!-- MAIN CONTENT -->
+
+
+
+        <section class="booking-layout">
+
+
+
+
+
+   <!-- LEFT - ROOM LIST -->
+
+
+
+
+            <div class="rooms-column">
+
+                <div class="room-list">
+
+
+
+
+<!-- R101 -->
+
+
+                    <article
+                        class="room-card"
+                        data-room="R101">
+
+                        <img
+                            src="images/R101.png"
+                            alt="Deluxe Room"
+                            class="room-image">
+
+
+                        <div class="room-details">
+
+                            <span class="room-code">
+                                R101
+                            </span>
+
+                            <h2>
+                                Deluxe Room
+                            </h2>
+
+
+                            <div class="room-meta">
+
+                                <span>
+                                    ♧ &nbsp; 2 Guests
+                                </span>
+
+                                <span>
+                                    🛏 &nbsp; King Bed
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                A comfortable and stylish room with modern
+                                amenities, perfect for a relaxing stay.
+                            </p>
+
+                        </div>
+
+
+                        <div class="room-price">
+
+                            <div>
+                                <strong>
+                                    ₹ 3,500
+                                </strong>
+
+                                <span>
+                                    per night
+                                </span>
+                            </div>
+
+
+                            <button
+                                class="select-room"
+                                type="button">
+                                Select Room
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+
+
+<!-- R102 -->
+
+
+
+                    <article
+                        class="room-card"
+                        data-room="R102">
+
+                        <img
+                            src="images/R102.png"
+                            alt="Deluxe Room"
+                            class="room-image">
+
+
+                        <div class="room-details">
+
+                            <span class="room-code">
+                                R102
+                            </span>
+
+                            <h2>
+                                Deluxe Room
+                            </h2>
+
+
+                            <div class="room-meta">
+
+                                <span>
+                                    ♧ &nbsp; 2 Guests
+                                </span>
+
+                                <span>
+                                    🛏 &nbsp; King Bed
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                A comfortable and stylish room with modern
+                                amenities, perfect for a relaxing stay.
+                            </p>
+
+                        </div>
+
+
+                        <div class="room-price">
+
+                            <div>
+                                <strong>
+                                    ₹ 3,500
+                                </strong>
+
+                                <span>
+                                    per night
+                                </span>
+                            </div>
+
+
+                            <button
+                                class="select-room"
+                                type="button">
+                                Select Room
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+
+
+
+<!-- R201 -->
+
+
+                    <article
+                        class="room-card"
+                        data-room="R201">
+
+                        <img
+                            src="images/R201.png"
+                            alt="Executive Suite"
+                            class="room-image">
+
+
+                        <div class="room-details">
+
+                            <span class="room-code">
+                                R201
+                            </span>
+
+                            <h2>
+                                Executive Suite
+                            </h2>
+
+
+                            <div class="room-meta">
+
+                                <span>
+                                    ♧ &nbsp; 3 Guests
+                                </span>
+
+                                <span>
+                                    🛏 &nbsp; King Bed
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Spacious suite with premium furnishings
+                                and a great view.
+                            </p>
+
+                        </div>
+
+
+                        <div class="room-price">
+
+                            <div>
+                                <strong>
+                                    ₹ 5,800
+                                </strong>
+
+                                <span>
+                                    per night
+                                </span>
+                            </div>
+
+
+                            <button
+                                class="select-room"
+                                type="button">
+                                Select Room
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+
+
+
+
+<!-- R202 -->
+
+
+                    <article
+                        class="room-card"
+                        data-room="R202">
+
+                        <img
+                            src="images/R202.png"
+                            alt="Executive Suite"
+                            class="room-image">
+
+
+                        <div class="room-details">
+
+                            <span class="room-code">
+                                R202
+                            </span>
+
+                            <h2>
+                                Executive Suite
+                            </h2>
+
+
+                            <div class="room-meta">
+
+                                <span>
+                                    ♧ &nbsp; 3 Guests
+                                </span>
+
+                                <span>
+                                    🛏 &nbsp; King Bed
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Spacious suite with premium furnishings
+                                and a great view.
+                            </p>
+
+                        </div>
+
+
+                        <div class="room-price">
+
+                            <div>
+                                <strong>
+                                    ₹ 5,800
+                                </strong>
+
+                                <span>
+                                    per night
+                                </span>
+                            </div>
+
+
+                            <button
+                                class="select-room"
+                                type="button">
+                                Select Room
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+
+
+
+
+ <!-- R301 -->
+
+
+
+                    <article
+                        class="room-card"
+                        data-room="R301">
+
+                        <img
+                            src="images/R301.png"
+                            alt="Family Room"
+                            class="room-image">
+
+
+                        <div class="room-details">
+
+                            <span class="room-code">
+                                R301
+                            </span>
+
+                            <h2>
+                                Family Room
+                            </h2>
+
+
+                            <div class="room-meta">
+
+                                <span>
+                                    ♧ &nbsp; 4 Guests
+                                </span>
+
+                                <span>
+                                    🛏 &nbsp; 2 Queen Beds
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Ideal for families, with extra space and
+                                all the essentials for a comfortable stay.
+                            </p>
+
+                        </div>
+
+
+                        <div class="room-price">
+
+                            <div>
+                                <strong>
+                                    ₹ 4,200
+                                </strong>
+
+                                <span>
+                                    per night
+                                </span>
+                            </div>
+
+
+                            <button
+                                class="select-room"
+                                type="button">
+                                Select Room
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+ <!-- RIGHT - BOOKING SUMMARY -->
+
+
+
+
+
+            <aside class="summary-card">
+
+
+                <h2>
+                    Selected Room
+                </h2>
+
+
+                <!-- Selected room preview -->
+                <div
+                    class="selected-room"
+                    id="selectedRoom">
+
+                    <div class="empty-room-icon">
+                        🛏
+                    </div>
+
+                    <h3>
+                        No room selected
+                    </h3>
+
+                    <p>
+                        Choose a room from the list to see
+                        details here.
+                    </p>
+
+                </div>
+
+
+
+
+
+<!-- Stay details -->
+
+
+
+                <div class="summary-section">
+
+                    <h3>
+                        Stay Details
+                    </h3>
+
+
+                    <div class="summary-row">
+
+                        <div>
+                            📅
+                            <span>
+                                Check-in
+                            </span>
+                        </div>
+
+                        <strong id="summaryCheckIn">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <div>
+                            📅
+                            <span>
+                                Check-out
+                            </span>
+                        </div>
+
+                        <strong id="summaryCheckOut">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <div>
+                            ◔
+                            <span>
+                                Number of Nights
+                            </span>
+                        </div>
+
+                        <strong id="summaryNights">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+
+<!-- Price details -->
+
+
+                <div class="summary-section">
+
+                    <h3>
+                        Price Details
+                    </h3>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Price per Night
+                        </span>
+
+                        <strong id="summaryPrice">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Number of Nights
+                        </span>
+
+                        <strong id="summaryNightsPrice">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+
+<!-- Total -->
+
+
+
+                <div class="total-section">
+
+                    <span>
+                        Total Price
+                    </span>
+
+                    <strong id="summaryTotal">
+                        -
+                    </strong>
+
+                </div>
+
+
+
+
+ <!-- Proceed -->
+
+
+
+
+                <button
+                    class="proceed-btn"
+                    id="proceedBtn"
+                    type="button"
+                    disabled>
+                    Proceed
+                </button>
+
+
+                <div class="summary-note">
+
+                    <span>
+                        ⓘ
+                    </span>
+
+                    <span id="summaryNote">
+                        Select a room to see the total price.
+                    </span>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
