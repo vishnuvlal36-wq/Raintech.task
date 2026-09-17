@@ -2,7 +2,10 @@ A simple hotel room booking page created for the Raintech Software Limited Asses
 The app lets users choose their check in and check out dates select a room, and see the number of nights and total price
 
 
+
 how to run - Open the project folder in GitHub and double click on the index.html
+
+
 
 Features
 
