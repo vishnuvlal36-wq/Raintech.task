@@ -5,11 +5,11 @@ The app lets users choose their check in and check out dates select a room, and 
 
 how to run 
 
-1 Open the GitHub repository using the provided link
-2 Open the ACTIONS section
-3 Select the "Pages build and deployment" workflow
-4 Open the workflow
-5 Select the Deploy site link
+1 Open the GitHub repository using the provided link -
+2 Open the ACTIONS section -
+3 Select the "Pages build and deployment" workflow - 
+4 Open the workflow - 
+5 Select the Deploy site link - 
 6 The hotel room booking will open in the browser
 
 
